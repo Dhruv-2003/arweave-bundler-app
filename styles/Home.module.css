@@ -73,7 +73,6 @@
 }
 
 .center {
-  display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -97,11 +96,36 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
   transform: translateZ(0);
+}
+
+.button {
+  width: 250px;
+  height: 50px;
+  font-size: larger;
+  font-weight: 600;
+  color: black;
+  margin-top: 10px;
+  font-family: var(--font-mono);
+}
+
+.input {
+  width: 250px;
+  height: 30px;
+  margin-bottom: 10px;
+  font-family: var(--font-mono);
+}
+
+.inputFile {
+  margin-top: 10px;
+  padding-left: 60px;
+  margin-left: 30px;
+  width: 250px;
+  font-family: var(--font-mono);
 }
 
 .logo,
@@ -125,7 +149,7 @@
 
 .thirteen::before,
 .thirteen::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
 }
